@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ 
+    <title>Weather Forecaster</title>
+ 
+    <link rel="icon" href="../static/images/favicon.png">
+    <link rel="stylesheet" href="../static/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/sass/weather_project.css">
+ 
+    <script src="../static/js/index.js"></script>
+  </head>
+ 
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ 
+      <a class="navbar-brand" href="#">Weather Forecaster</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+ 
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#">Home</a>
+          <a class="nav-item nav-link" href="https://www.dnes.bg/news.php?last&cat=558">News</a>
+          <a class="nav-item nav-link" href="#">More</a>
+      </div>
+      </div>
+ 
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Enter location..." aria-label="Search">
+        <button class="btn btn-secondary btn-sm" type="submit">Search</button>
+      </form>
+ 
+    </nav>
+<!--<div class="container" id = "top_container">
+      <h1>Today</h1>
+      <p>Today</p> 
+      <p>Next 3 days</p>
+      <p>Next 7 days</p> 
+    </div>
+ 
+    <div class="container" id = "mid_container">
+      <!-- <h1 id = "three_days">Next three days</h1> 
+      <p>Today</p> 
+      <p>Next 3 days</p>
+      <p>Next 7 days</p>
+    </div>
+ 
+    <div class="container" id = "bot_container">
+      <!-- <h1>Current location weather forecast</h1> 
+      <p>edno</p> 
+      <p>dve</p>
+      <p>tri</p>
+      <p>chetiri</p> 
+      <p>pet</p>
+      <p>shest</p>
+      <p>sedem</p>  
+ 
+    </div> -->
+ 
+    <div class="container">
+       <div class="d-flex justify-content-center" id = "top_container">
+ 
+        <div class="col" id = "today">
+          <b>Today</b>
+          <p><img src = "../static/images/sun.png" alt="Sunny weather" width="40" height="40"></p>
+          <p>temp:</p>
+          <p>humidity:</p>
+          <p>rain:</p>
+          <p>wind speed:</p>
+          <p>clouds:</p>
+        </div>
+ 
+      </div>
+      <div class="row align-items-center">
+        <div class="col"  id = "three_days">
+          <b>First_day</b>
+          <p>temp:</p>
+          <p>humidity:</p>
+          <p>rain:</p>
+          <p>wind speed:</p>
+          <p>clouds:</p>
+        </div>
+        <div class="col">
+          <b>Second_day</b>
+          <p>temp:</p>
+          <p>humidity:</p>
+          <p>rain:</p>
+          <p>wind speed:</p>
+          <p>clouds:</p>
+        </div>
+        <div class="col">
+          <b>Third_day</b>
+          <p>temp:</p>
+          <p>humidity:</p>
+          <p>rain:</p>
+          <p>wind speed:</p>
+          <p>clouds:</p>
+        </div>
+      </div>
+      <div class="row align-items-end">
+        <div class="col">
+          <b>First_day</b>
+          <p>temp:</p>
+          <p>humidity:</p>
+          <p>rain:</p>
+          <p>wind speed:</p>
+          <p>clouds:</p>
+ 
+        </div>
+        <div class="col">
+          <b>Second_day</b>
+          <p>temp:</p>
+          <p>humidity:</p>
+          <p>rain:</p>
+          <p>wind speed:</p>
+          <p>clouds:</p>
+        </div>
+        <div class="col">
+          <b>Third_day</b>
+          <p>temp:</p>
+          <p>humidity:</p>
+          <p>rain:</p>
+          <p>wind speed:</p>
+          <p>clouds:</p>
+        </div>
+        <div class="col">
+          <b>Forth_day</b>
+          <p>temp:</p>
+          <p>humidity:</p>
+          <p>rain:</p>
+          <p>wind speed:</p>
+          <p>clouds:</p>
+        </div>
+        <div class="col">
+          <b>Fifth_day</b>
+          <p>temp:</p>
+          <p>humidity:</p>
+          <p>rain:</p>
+          <p>wind speed:</p>
+          <p>clouds:</p>
+        </div>
+        <div class="col">
+          <b>Sixth_day</b>
+          <p>temp:</p>
+          <p>humidity:</p>
+          <p>rain:</p>
+          <p>wind speed:</p>
+          <p>clouds:</p>
+        </div>
+        <div class="col">
+          <b>Seventh_day</b>
+          <p>temp:</p>
+          <p>humidity:</p>
+          <p>rain:</p>
+          <p>wind speed:</p>
+          <p>clouds:</p>
+        </div>
+      </div>
+    </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  </body>
+ 
+ 
+</html>
