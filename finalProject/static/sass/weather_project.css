@@ -1,24 +1,42 @@
 body{
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
+    background-color:#FFDEAD
 }
-
- .container{
+#today_icon{
+    filter: brightness(75%);
+}
+.container{
     /* margin-top: 10px; */
     /* margin-bottom: auto; */
     /* padding-top: auto; */
     /* padding-bottom: 5px; */
     /* height: 650px; */
     text-align: center;
+    /* //font-size: 18px; */
     /* display: grid; */
     /* grid-template-rows: auto auto auto; */
+}
+#title{
+    font-weight: 1000;
+    font-size: 25px;
+}
+#today > p{
+    font-size: 21px;
+}
+#today > p > span{
+    font-weight:bold;
+    font-size: 19px;
 }
 .form-inline{
     display: flex;
 }
-
-/*
-.container > p{
-    font-size: 20px;
+#today_description{
+    font-style:oblique;
+    font-family:monospace;
+    color: gray;
     font-weight: bold;
-} */
+    
+
+}
+
 

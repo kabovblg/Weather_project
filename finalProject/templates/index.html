@@ -67,13 +67,14 @@
        <div class="d-flex justify-content-center" id = "top_container">
  
         <div class="col" id = "today">
-          <b>Today</b>
-          <p><img id ="today_icon" alt="Current weather pic" width="40" height="40"></p>
-          <p>temp:</p>
-          <p>humidity:</p>
-          <p>rain:</p>
-          <p>wind speed:</p>
-          <p>clouds:</p>
+          <b id = "title">Today</b>
+          <p><img id ="today_icon" alt="Current weather pic" width="90" height="90"></p>
+          <p id="today_description"></p>
+          <p><span><img src="../static/images/thermometer.png" width="20" height="20"></span> temperature:<span id=today_temp></span></p> 
+          <p><span><img src="../static/images/humidity.png" width="20" height="20"></span> humidity: <span id=today_humidity></span></p>
+          <p><span><img src="../static/images/rain.png" width="20" height="20"></span> rain: <span id=today_rain></span></p>
+          <p><span><img src="../static/images/wind.png" width="20" height="20"></span> wind speed: <span id=today_windSpeed></span></p>
+          <p><span><img src="../static/images/clouds.png" width="20" height="20"></span> cloudiness: <span id=today_cloudiness></span></p>
         </div>
  
       </div>
