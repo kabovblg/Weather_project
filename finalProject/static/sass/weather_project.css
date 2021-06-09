@@ -5,7 +5,10 @@ body{
     /* background-color: #ffffb3; */
     /* background-color: #ffff66; */
     /* background-color: #d2ff4d; */
-    background-color: #ffd9b3;
+    /* background-color: #ffd9b3; */
+    background-image:url(".../static/images/background.jpg");
+    background-size: cover;
+    
 }
 
 .container{

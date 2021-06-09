@@ -57,15 +57,11 @@ fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exc
         if (response.status < 200 && response.status > 300) {
             console.log("There is a problem!");
           }
-        
         response.json().then( (data) => {    
           console.log(data);
           
           for(let i=0; i<3; i++){
-            let threeDays_icon_url = data.daily[i].weather[0].icon;
-            document.getElementById('threeDays_icon'+i).src = `http://openweathermap.org/img/wn/${threeDays_icon_url}.png`
-
-
+            document.getElementById('threeDays_icon'+i).src = `http://openweathermap.org/img/wn/${data.daily[i].weather[0].icon}.png`;
             document.getElementById('threeDays_temp'+i).innerHTML = (data.daily[i].temp.day - 273.15).toFixed(0) + "°";
             document.getElementById('threeDays_hum'+i).innerHTML = data.daily[i].humidity  + "%";
             document.getElementById('threeDays_rain'+i);
@@ -73,12 +69,20 @@ fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exc
               ('threeDays_rain'+i).innerHTML = data.daily[i].rain + "l/m²";
             } else {
               ('threeDays_rain'+i).innerHTML = "0%";
-            }
+              }
             document.getElementById('threeDays_ws'+i).innerHTML = data.daily[i].wind_speed  + "m/s";
             document.getElementById('threeDays_clouds'+i).innerHTML = data.daily[i].clouds  + "%";
+            }
 
-          }
-          })
+            for(let i=0; i<7; i++){
+              document.getElementById('sevenDays_icon'+i).src = `http://openweathermap.org/img/wn/${data.daily[i].weather[0].icon}.png`;
+              document.getElementById('sevenDays_temp'+i).innerHTML = (data.daily[i].temp.day - 273.15).toFixed(0) + "°";
+              document.getElementById('sevenDays_hum'+i).innerHTML = data.daily[i].humidity  + "%";
+              // document.getElementById('sevenDays_rain'+i);
+              document.getElementById('sevenDays_ws'+i).innerHTML = data.daily[i].wind_speed.toFixed(1)  + "m/s";
+              document.getElementById('sevenDays_clouds'+i).innerHTML = data.daily[i].clouds  + "%";
+              }
+            })
         })
         .catch((err) => {
           console.log("Тhe following error occured!");
