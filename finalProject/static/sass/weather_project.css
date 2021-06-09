@@ -6,7 +6,7 @@ body{
     /* background-color: #ffff66; */
     /* background-color: #d2ff4d; */
     /* background-color: #ffd9b3; */
-    background-image:url(".../static/images/background.jpg");
+    background-image:url("../images/background.jpg");
     background-size: cover;
     
 }
@@ -52,7 +52,7 @@ body{
 #today_description{
     font-style:oblique;
     font-family:monospace;
-    color: gray;
+    color:white;
     font-weight: bold;
     
 }
@@ -67,5 +67,10 @@ body{
 #max_temp{
     color:red;
 }
+
+
+
+
+
 
 
