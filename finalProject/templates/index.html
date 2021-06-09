@@ -37,75 +37,56 @@
       </form>
  
     </nav>
-<!--<div class="container" id = "top_container">
-      <h1>Today</h1>
-      <p>Today</p> 
-      <p>Next 3 days</p>
-      <p>Next 7 days</p> 
-    </div>
- 
-    <div class="container" id = "mid_container">
-      <!-- <h1 id = "three_days">Next three days</h1> 
-      <p>Today</p> 
-      <p>Next 3 days</p>
-      <p>Next 7 days</p>
-    </div>
- 
-    <div class="container" id = "bot_container">
-      <!-- <h1>Current location weather forecast</h1> 
-      <p>edno</p> 
-      <p>dve</p>
-      <p>tri</p>
-      <p>chetiri</p> 
-      <p>pet</p>
-      <p>shest</p>
-      <p>sedem</p>  
- 
-    </div> -->
- 
+
+    <p id = "location"><span><img src="../static/images/curr_loc.png" width="20" height="20"></span><span id = "curr_loc"></span></p>
     <div class="container">
-       <div class="d-flex justify-content-center" id = "top_container">
+      
+       
+      <div class="d-flex justify-content-center" id = "top_container">
  
         <div class="col" id = "today">
           <b id = "title">Today</b>
           <p><img id ="today_icon" alt="Current weather pic" width="90" height="90"></p>
           <p id="today_description"></p>
-          <p><span><img src="../static/images/thermometer.png" width="20" height="20"></span> temperature:<span id=today_temp></span></p> 
-          <p><span><img src="../static/images/humidity.png" width="20" height="20"></span> humidity: <span id=today_humidity></span></p>
-          <p><span><img src="../static/images/rain.png" width="20" height="20"></span> rain: <span id=today_rain></span></p>
-          <p><span><img src="../static/images/wind.png" width="20" height="20"></span> wind speed: <span id=today_windSpeed></span></p>
-          <p><span><img src="../static/images/clouds.png" width="20" height="20"></span> cloudiness: <span id=today_cloudiness></span></p>
+          <p><span><img src="../static/images/thermometer.png" width="20" height="20"></span> temperature:<span id=today_temp></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;feels like: <span id=feels_like></span></p> 
+          <p>min:<span id="min_temp"></span>&nbsp;&nbsp;&nbsp;<img src="../static/images/min_max.png" width="20" height="20">&nbsp;&nbsp;&nbsp;max:<span id=max_temp></span></p>
+          <p><span><img src="../static/images/rain.png" width="20" height="20"></span> rain: <span id=today_rain></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../static/images/humidity.png" width="20" height="20"></span>humidity: <span id=today_humidity></span></p>
+          <p><span><img src="../static/images/wind.png" width="20" height="20"></span> wind speed: <span id=today_windSpeed></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><img src="../static/images/clouds.png" width="20" height="20"></span> cloudiness: <span id=today_cloudiness></span></p>
+          <!-- <p><span><img src="../static/images/clouds.png" width="20" height="20"></span> cloudiness: <span id=today_cloudiness></span></p> -->
         </div>
  
       </div>
       <div class="row align-items-center">
-        <div class="col"  id = "three_days">
+        <div class="col" id = "three_days" >
           <b>First_day</b>
-          <p>temp:</p>
-          <p>humidity:</p>
-          <p>rain:</p>
-          <p>wind speed:</p>
-          <p>clouds:</p>
+          <p><img id ="threeDays_icon0" alt="Today weather pic" width="90" height="90"></p>
+          <p><span><img src="../static/images/thermometer.png" width="20" height="20"></span> temperature:<span id="threeDays_temp0"></span></p>
+          <p><span><img src="../static/images/humidity.png" width="20" height="20"></span> humidity:<span id="threeDays_hum0"></span></p>
+          <p><span><img src="../static/images/rain.png" width="20" height="20"></span> rain:<span id="threeDays_rain0"></span></p>
+          <p><span><img src="../static/images/wind.png" width="20" height="20"></span> wind speed:<span id="threeDays_ws0"></span></p>
+          <p><span><img src="../static/images/clouds.png" width="20" height="20"></span> cloudiness:<span id="threeDays_clouds0"></span></p>
         </div>
-        <div class="col">
+        <div class="col" id = "three_days1">
           <b>Second_day</b>
-          <p>temp:</p>
-          <p>humidity:</p>
-          <p>rain:</p>
-          <p>wind speed:</p>
-          <p>clouds:</p>
+          <p><img id ="threeDays_icon1" alt="Today weather pic" width="90" height="90"></p>
+          <p><span><img src="../static/images/thermometer.png" width="20" height="20"></span> temperature:<span id="threeDays_temp1"></span></p>
+          <p><span><img src="../static/images/humidity.png" width="20" height="20"></span> humidity:<span id="threeDays_hum1"></span></p>
+          <p><span><img src="../static/images/rain.png" width="20" height="20"></span> rain:<span id="threeDays_rain1"></span></p>
+          <p><span><img src="../static/images/wind.png" width="20" height="20"></span> wind speed:<span id="threeDays_ws1"></span></p>
+          <p><span><img src="../static/images/clouds.png" width="20" height="20"></span> cloudiness:<span id="threeDays_clouds1"></span></p>
         </div>
-        <div class="col">
+        <div class="col" id = "three_days2">
           <b>Third_day</b>
-          <p>temp:</p>
-          <p>humidity:</p>
-          <p>rain:</p>
-          <p>wind speed:</p>
-          <p>clouds:</p>
+          <p><img id ="threeDays_icon2" alt="Today weather pic" width="90" height="90"></p>
+          <p><span><img src="../static/images/thermometer.png" width="20" height="20"></span> temperature:<span id="threeDays_temp2"></span></p>
+          <p><span><img src="../static/images/humidity.png" width="20" height="20"></span> humidity:<span id="threeDays_hum2"></span></p>
+          <p><span><img src="../static/images/rain.png" width="20" height="20"></span> rain:<span id="threeDays_rain2"></span></p>
+          <p><span><img src="../static/images/wind.png" width="20" height="20"></span> wind speed:<span id="threeDays_ws2"></span></p>
+          <p><span><img src="../static/images/clouds.png" width="20" height="20"></span> cloudiness:<span id="threeDays_clouds2"></span></p>
         </div>
       </div>
-      <div class="row align-items-end">
-        <div class="col">
+      <div class="row align-items-end" id = "seven_days">
+        <div class="col" >
           <b>First_day</b>
           <p>temp:</p>
           <p>humidity:</p>

@@ -1,10 +1,13 @@
 body{
     /* background-color: lightsalmon; */
-    background-color:#FFDEAD
+    /* background-color:#FFDEAD */
+    /* background-color: #ffff99; */
+    /* background-color: #ffffb3; */
+    /* background-color: #ffff66; */
+    /* background-color: #d2ff4d; */
+    background-color: #ffd9b3;
 }
-#today_icon{
-    filter: brightness(75%);
-}
+
 .container{
     /* margin-top: 10px; */
     /* margin-bottom: auto; */
@@ -16,6 +19,7 @@ body{
     /* display: grid; */
     /* grid-template-rows: auto auto auto; */
 }
+
 #title{
     font-weight: 1000;
     font-size: 25px;
@@ -27,6 +31,18 @@ body{
     font-weight:bold;
     font-size: 19px;
 }
+#three_days > p > span{
+    font-weight:bold;
+    font-size: 16px;
+}
+#three_days1 > p > span{
+    font-weight:bold;
+    font-size: 16px;
+}
+#three_days2 > p > span{
+    font-weight:bold;
+    font-size: 16px;
+}
 .form-inline{
     display: flex;
 }
@@ -36,7 +52,17 @@ body{
     color: gray;
     font-weight: bold;
     
-
+}
+#location{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+#min_temp{
+    color:blue;
+}
+#max_temp{
+    color:red;
 }
 
 
