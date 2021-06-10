@@ -67,7 +67,51 @@ body{
 #max_temp{
     color:red;
 }
+#dropdownMenuButton1{
+    /* margin-top: 100px; */
+    margin-bottom: 160px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 190px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
+#sevenDays_temp6{
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#sevenDays_temp5{
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#sevenDays_temp4{
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#sevenDays_temp3{
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: 30px;
+}
 
 
 
