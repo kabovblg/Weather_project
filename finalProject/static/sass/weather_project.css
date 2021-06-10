@@ -112,9 +112,24 @@ body{
     font-weight: bolder;
     font-size: 30px;
 }
-
-
-
+#sevenDays_temp2{
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#sevenDays_temp1{
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#sevenDays_temp0{
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.dropdown{
+    font-weight: bold;
+}
 
 
 
