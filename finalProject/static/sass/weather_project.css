@@ -74,7 +74,7 @@ body{
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-bottom: 190px;
+    margin-bottom: 185px;
   }
   
   .dropdown-content {
@@ -130,6 +130,12 @@ body{
 .dropdown{
     font-weight: bold;
 }
-
-
+#data1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+#today_temp{
+    font-size: 150px;
+    font-weight: bold;
+}
 
