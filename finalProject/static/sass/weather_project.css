@@ -134,13 +134,14 @@ body{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
 }
-#today_temp{
-    font-size: 150px;
-    font-weight: bold;
-}
 #today_date{
     font-style: italic;
     text-align: center;
     font-family: monospace;
+}
+#today_temp{
+    font-family: fantasy;
+    font-weight: bolder;
+    text-shadow: 2px 2px whitesmoke;
 }
 
