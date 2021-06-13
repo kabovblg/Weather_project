@@ -138,4 +138,9 @@ body{
     font-size: 150px;
     font-weight: bold;
 }
+#today_date{
+    font-style: italic;
+    text-align: center;
+    font-family: monospace;
+}
 
