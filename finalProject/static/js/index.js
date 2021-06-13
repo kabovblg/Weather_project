@@ -107,6 +107,53 @@ fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exc
         .catch((err) => {
           console.log("Тhe following error occured!");
         });
-      
-      
       }
+
+// fetching data by city_name:
+function cityWeather(){
+      let city_name = document.getElementById('city_name').value;
+      
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=e65131942bb3e151c8db39d0794c5802`)
+        .then( (response) => {
+          if (response.status < 200 && response.status > 300) {
+              console.log("There is a problem!");
+            }
+          response.json().then( (data) => {
+            console.log(data);
+
+            document.getElementById('title').innerHTML = days[n];
+
+          let today_icon_url = data.weather[0].icon;
+          let today_icon = document.getElementById('today_icon');
+          today_icon.src = `http://openweathermap.org/img/wn/${today_icon_url}.png`
+
+          document.getElementById('curr_loc').innerHTML = data.name;
+        
+          document.getElementById('today_description').innerHTML = data.weather[0].description;
+
+          document.getElementById('today_temp').innerHTML = (data.main.temp - 273.15).toFixed(0) + "°";
+
+          document.getElementById('feels_like').innerHTML = (data.main.feels_like -273.15).toFixed(0) + "°";
+          
+          document.getElementById('min_temp').innerHTML = (data.main.temp_min - 273.15).toFixed(0) + "°";
+
+          document.getElementById('max_temp').innerHTML = (data.main.temp_max - 273.15).toFixed(0) + "°";
+          
+          document.getElementById('today_humidity').innerHTML = data.main.humidity  + "%";
+          
+          document.getElementById('today_rain');
+          if(data.rain){
+            today_rain.innerHTML = data.rain[0] + "l/m²";
+          } else {
+            today_rain.innerHTML = "0%";
+          }
+          document.getElementById('today_windSpeed').innerHTML = data.wind.speed  + "m/s";
+          
+          document.getElementById('today_cloudiness').innerHTML = data.clouds.all  + "%";
+          })
+        })
+        .catch((err) => {
+          console.log("Тhe following error occured!");
+        });
+      }
+     
