@@ -142,6 +142,7 @@ body{
 #today_temp{
     font-family: fantasy;
     font-weight: bolder;
+    font-size: 50px !important;
     text-shadow: 2px 2px whitesmoke;
 }
 
